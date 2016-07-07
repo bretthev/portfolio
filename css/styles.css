@@ -1,0 +1,77 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header {
+  background: #2CA0CF;
+  border-bottom: 5px solid #1A427A;
+  height: 75px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+nav h1 {
+  font-size: 200%;
+  float: left;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+nav li{
+  display: inline-block;
+  float: right;
+  padding-top: 30px;
+  padding-right: 30px;
+  margin: auto 10px;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+section {
+  border-bottom: 3px solid grey;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 200%;
+  padding: 15px;
+}
+
+article {
+  display: inline-block;
+}
+
+section img{
+  width: 25%;
+  padding: 15px;
+}
+
+section p{
+  padding: 50px;
+}
+
+footer ul{
+  float: left;
+}
+
+footer li {
+  display: inline-block;
+}
+
+footer img {
+  width: 25px;
+  margin: 10px;
+}
+
+footer h4 {
+  float: right;
+  padding: 20px;
+}
