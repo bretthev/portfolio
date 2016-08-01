@@ -1,205 +1,138 @@
 html {
   box-sizing: border-box;
-}
+};
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/*header stuff*/
-
 body {
-  font-family: "Arial Black", Arial Bold, Gadget, sans-serif;
-}
-
-header {
-  font-family: "Arial Black", Arial Bold, Gadget, sans-serif;
-  background: #9BDDFF;
-  border-bottom: 5px solid #1A427A;
-  height: 50px;
-  margin-bottom: 15px;
-  text-align: center;
-  position: fixed;
+  font-family: 'BioRhyme', serif;
+  height: 100%;
   width: 100%;
 }
 
-header a:hover {
-  color: #9BDDFF;
-  background: black;
+header {
+  height: 100px;
+  background: #e62739;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  background: #e62739;
+  color: #ffffff;
+}
+
+.container {
+  /*font-family: 'BioRhyme', serif;*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background: #b5b5b7;
+}
+
+.content-box {
+  width: 35%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .circle-img {
   border-radius: 50%;
+  width: 65%;
 }
 
-a:link {
-  text-decoration: underline;
-  color: black;
+.links {
+  width: 20%;
+  background: #6ed3cf;
+  color: #ffffff;
 }
 
-a:visited {
-  text-decoration: none;
-  color: inherit;
+.content-box ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-h1 {
-  font-size: 200%;
-  float: left;
-  padding-top: 5px;
-  padding-left: 10px;
-
-}
-
-
-nav li{
-  display: inline-block;
-  float: right;
-  padding-top: 10px;
-  padding-right: 30px;
-  margin: auto 10px;
-}
-
-/*content stuff*/
-
-section {
-  border-bottom: 3px solid grey;
-  width: 100%;
+.content-box li {
+  margin: 15%;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  font-size: 1.5em;
 }
 
-section img{
-  width: 25%;
-  padding: 10px;
+.goals {
+  background: #677077;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 1.2em;
+  color: #ffffff;
 }
 
-section h2 {
-  font-size: 200%;
+.philosophy{
+  margin: 5%;
 }
 
-section p {
-  padding: 50px;
+.picture {
+  background: #252839;
+  color: #ffffff;
 }
 
-#welcome h2{
-  font-size: 300%;
-  margin-top: 10px;
-}
-
-/*project section*/
-
-#work {
-  background: #6996B7;
-  color: white;
-}
-
-.project {
-  display: inline-block;
-  width: 100%;
-}
-
-.project p a:hover{
-  background: white;
-  color: #6996B7;
-}
-
-.project p {
-  margin-top: 5%;
-  display: inline-block;
-  width: 40%;
-  margin: auto;
-}
-
-.project img {
+.picture p {
   margin-top: 10%;
-  width: 40%;
-  vertical-align: top;
-  margin-right: 10px;
-  color: transparent;
 }
 
-/*about me stuff*/
-
-#about {
-  display: inline-block;
-}
-
-#about h3 {
-  font-size: 150%;
-  margin-bottom: 20px;
-}
-
-.education {
-  margin-top: 50px;
-  width: 40%;
-  display: inline-block;
-}
-
-.education li{
-  padding: 10px;
-}
-
-.education a:hover{
-  background: black;
-  color: white;
-}
-
-.personal {
-  display: inline-block;
-  width: 40%;
-  vertical-align: top;
-}
-/*footer stuff*/
 
 footer {
+  transition-duration: 2s;
+  height: 100px;
+  color: #ffffff;
+  background: #9068be;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.square-container{
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.big-square {
+  background: #e62739;
+  background: #6ed3cf;
   height: 50px;
-  background-color: #9BDDFF;
+  width: 50px;
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer ul{
-  float: left;
-}
-
-footer li {
-  display: inline-block;
-}
-
-footer a:hover {
-  color: #9BDDFF;
-  background: black;
-}
-
-footer img {
+.small-square {
+  background: #e62739;
+  height: 25px;
   width: 25px;
-  margin: 10px;
-}
-
-footer h4 {
-  float: right;
-  padding: 20px;
-}
-
-/*smaller screen*/
-@media screen and (max-width: 700px) {
-
-  nav li {
-    padding-right: 10px;
-    float: right;
-  }
-
-  .project, .project img, .project p {
-    display: block;
-    width: 100%;
-  }
-  .project img {
-    height: 30%;
-    width: 50%;
-    margin: auto;
-    margin-top: 20px;
-  }
-  .personal, .education {
-    display: block;
-    margin: auto;
-    width: 100%;
-  }
 }

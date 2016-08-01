@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset = "utf-8">
+  <link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
+  <meta charset="utf-8">
   <title>Brett's Portfolio</title>
   <link rel="stylesheet" type=text/css href="css/reset.css">
   <link rel="stylesheet" type=text/css href="css/styles.css">
@@ -9,77 +10,27 @@
 
 <body>
   <header>
-    <h1>Brett Hevia</h1>
-    <nav>
-      <ul>
-        <li><a href="#work">Work</a></li>
-        <!-- <li><a href="#thoughts">Thoughts</a></li> -->
-        <li><a href="#about">About</a></li>
-      </ul>
-    </nav>
+    <p class="magic-box">Welcome to Brett Hevia's portfolio.</p>
   </header>
-
-  <section id="welcome">
-    <img class = "circle-img" src="images/brett_hevia.jpg">
-    <h2>Hi. I'm Brett.</h2>
-    <p>
-      As a front-end web developer, I love creating beautiful things that work intuitively. I am looking for an exciting and fast-paced environment on a team that values good communication and a creative approach to problem-solving.
-    </p>
-
-
-  </section>
-
-  <section id="work">
-    <h2>Work</h2>
-    <article class="project">
-      <a href="https://github.com/bretthev/number-guesser">
-        <img src="images/Number-guesser.png">
-      </a>
-      <p>
-        This is a random number-guessing game made with Javascript and HTML. The game generates a random number in the range provided by the user, then increases that range by 20 every time the user wins a round. It also returns various error messages when the rules are ignored. The emphasis for this project was on functionality over design. <a href="https://github.com/bretthev/number-guesser">Click here to see this project on Github.</a></p>
+  <section class="container">
+    <article class="content-box links"><ul><li id="projects"><a href="#">Projects</a></li><li id="bio"><a href="#">Bio</a></li><li id="education"><a href="#">Education</a></li></ul>
     </article>
-  </section>
-
-<!--Commented out until I actually get a blog up
-   <section id="thoughts">
-    <h2>Thoughts</h2>
-    <article class="blog">
-      <p><a href="https://medium.com/@brett.hevia">This is a link to Brett's Medium.</a></p>
-    </article>
-  </section> -->
-
-  <section id="about">
-    <h2>About</h2>
-
-    <div class = "personal">
-
-      <p>When I'm not making awesome stuff for the web, you can probably find me trying to learn new things in new places. Whether it's moving to Tianjin for a year to learn Chinese or a little village in Northern Thailand for six months to learn Muay Thai, I'm constantly trying to expand and then get out of my comfort zone.
-      </div>
-      <!-- <img src="images/my-dude.jpg" align: center> -->
-
-      <div class = "education">
-        <h3> Education </h3>
-        <ul>
-          <li>Certificate in Front-End Engineering, Turing School of Software and Design</li>
-          <li>Certificate in English Language Teaching to Adults, Cambridge University</li>
-          <li>BA in Religious Studies, University of Florida</li>
-        </ul>
-        <a href="https://resume.creddle.io/resume/7mn0c3qjjsl">Brett's Resume</a>
-      </div>
-
-
-  </section>
-
+    <article class="content-box goals"><p class="philosophy">Hi, I'm Brett. I'm a front-end developer. I like learning stuff and making things that work.</p></article>
+    <article class="content-box picture"><img class = "circle-img" src="images/brett_hevia.jpg"><p>This is me.</p></article>
+</section>
   <footer>
     <ul>
-      <li><a href="#facebook"><img src="images/facebook.png"></a></li>
-      <li><a href="#twitter"><img src="images/twitter.png"></a></li>
-      <li><a href="#github"><img src="images/github.png"></a></li>
+      <li>Twitter</li>
+      <li>Github</li>
+      <li>LinkedIn</li>
     </ul>
-    <h4><a href="#top">Back to top</a></h4>
+    <div class="square-container">
+      <div class="big-square">
+    <div class="small-square"></div>
+  </div>
+  </div>
   </footer>
-
+  <script src="scripts/jquery.js" charset="utf-8"></script>
+  <script src="scripts/scripts.js" charset="utf-8"></script>
 </body>
-
-
 </html>
