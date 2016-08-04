@@ -179,3 +179,97 @@ footer ul {
   width: 25px;
   margin-right: 10%;
 }
+
+@media screen and (max-width: 600px){
+
+  body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  header{
+    justify-content: center;
+    height: 15%;
+    position: fixed;
+    width: 100%;
+  }
+  header h2{
+    display: none;
+  }
+  header ul{
+    width: 100%;
+    justify-content: center;
+  }
+  header li{
+    font-size: .5em;
+  }
+  .container{
+    margin-top: 20%;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  article{
+    flex-direction: column;
+    margin-top: 10%;
+    width: 95%;
+  }
+  .project-image-box{
+    width: 95%;
+  }
+  .project-image-box img{
+    width: 90%;
+  }
+  .project-description{
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .project-description h3{
+    font-size: 1.25em;
+  }
+
+  .links{
+    display: none;
+  }
+  .trawn{
+    margin-top: 10%;
+  }
+  .work-description{
+    width: 80%;
+    text-align: center;
+  }
+  .idea-box{
+    display: flex;
+  }
+
+  .linked-list{
+    display: flex;
+    margin-bottom: 5%;
+  }
+
+  .number-guesser{
+    width: 100%;
+    display: flex;
+    margin-left: 0%;
+    margin-bottom: 5%;
+    justify-content: center;
+  }
+
+  .square-container{
+    display: none;
+  }
+
+  footer{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer ul{
+    font-size: 1.5em;
+    width: 100%;
+  }
+}

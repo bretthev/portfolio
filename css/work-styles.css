@@ -167,3 +167,77 @@ footer ul {
   height: 25px;
   width: 25px;
 }
+
+@media screen and (max-width: 600px){
+
+  body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  header{
+    justify-content: center;
+    height: 15%;
+    position: fixed;
+    width: 100%;
+  }
+  header h2{
+    display: none;
+  }
+  header ul{
+    width: 100%;
+    justify-content: center;
+  }
+  header li{
+    font-size: .5em;
+  }
+  .container{
+    margin-top: 20%;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  article{
+    margin-top: 5%;
+    width: 95%;
+  }
+  .links{
+    display: none;
+  }
+  .work-description{
+    width: 80%;
+    text-align: center;
+  }
+  .teacher{
+    display: flex;
+  }
+
+  .newspaper{
+    display: flex;
+    margin-bottom: 5%;
+  }
+
+  .hospitality{
+    width: 100%;
+    display: flex;
+    margin-left: 0%;
+    margin-bottom: 5%;
+    justify-content: center;
+  }
+
+  .square-container{
+    display: none;
+  }
+
+  footer{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer ul{
+    font-size: 1.5em;
+    width: 100%;
+  }
+}

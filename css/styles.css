@@ -39,7 +39,7 @@ a:hover {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 500px;
+  height: 550px;
   background: #b5b5b7;
 }
 
@@ -133,4 +133,54 @@ footer ul {
   height: 25px;
   width: 25px;
   margin: 5%;
+}
+
+@media screen and (max-width: 600px){
+  header{
+    display: none;
+  }
+  .container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .content-box{
+    width: 100%;
+    height:50%;
+    text-align: center;
+  }
+  .picture{
+    height: 60%;
+  }
+  .picture img{
+    margin-top: 10%;
+    margin-bottom: 1%;
+  }
+  .square-container{
+    display: none;
+  }
+  .picture p{
+    margin-bottom: 5%;
+  }
+
+  .link{
+    height: 35%;
+  }
+
+  .link a{
+    outline: #e62739; 
+  }
+
+  .link a:hover{
+    outline: none;
+  }
+  footer{
+    height: 15%;
+    align-items: center;
+  }
+  footer ul{
+    font-size: 1.5em;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
