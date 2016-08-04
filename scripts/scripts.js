@@ -16,14 +16,18 @@ $('#education').mouseenter(function() {
 
 $('#education').mouseleave(resetMagicBoxText);
 
+$('#work').mouseenter(function() {
+  $('.magic-box').text("Click to see some places where I've worked.");
+});
+
+$('#work').mouseleave(resetMagicBoxText);
+
 $('a').mouseenter(function() {
   $('.small-square').css('transition', 'transform 10s')
   $('.small-square').css('transform', 'rotate(1080deg)');
 })
 
 $('a').mouseleave(function() {
-  $('.big-square').css('transition', 'transform 10s')
-  $('.big-square').css('transform', 'rotate(1080deg)');
   $('.small-square').css('transition', 'transform 10s')
   $('.small-square').css('transform', 'rotate(-1080deg)');
 })
